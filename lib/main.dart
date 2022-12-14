@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:renkon_works/hobby_page.dart';
 import 'package:renkon_works/next_page.dart';
+import 'package:renkon_works/profile_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -44,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Container(
-              width: 250,
+              width: 200,
               height: 150,
               decoration: const BoxDecoration(
                 shape: BoxShape.circle,
@@ -56,28 +57,24 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             SizedBox(
-              height: 30,
+              height: 1,
+            ),
+            SizedBox(
+              height: 20,
             ),
             const Text(
-              '~ My profile ~',
+              'Name : Wada Yamato',
               style: TextStyle(
                 color: Color.fromARGB(255, 0, 0, 0),
-                fontSize: 45,
+                fontSize: 30,
                 fontWeight: FontWeight.bold,
-                shadows: [
-                  Shadow(
-                    color: Color.fromARGB(255, 127, 124, 124),
-                    offset: Offset(5.0, 5.0),
-                    blurRadius: 4.0,
-                  ),
-                ],
               ),
             ),
             SizedBox(
               height: 40,
             ),
             const Text(
-              'Name',
+              'Profile',
               style: TextStyle(
                 color: Color.fromARGB(255, 72, 238, 50),
                 fontSize: 45,
@@ -92,12 +89,23 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             const Text(
-              'Wada Yamato',
+              '↓',
               style: TextStyle(
                 color: Color.fromARGB(255, 0, 0, 0),
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
               ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ProfilePage()),
+                );
+              },
+              child: Text('My Profile Page'),
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Color.fromARGB(255, 0, 0, 0)),
             ),
             SizedBox(
               height: 15,
@@ -115,14 +123,6 @@ class _MyHomePageState extends State<MyHomePage> {
                     blurRadius: 4.0,
                   ),
                 ],
-              ),
-            ),
-            const Text(
-              'Web Design',
-              style: TextStyle(
-                color: Color.fromARGB(255, 0, 0, 0),
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
               ),
             ),
             const Text(
@@ -163,14 +163,6 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             const Text(
-              'Camp&Trip',
-              style: TextStyle(
-                color: Color.fromARGB(255, 0, 0, 0),
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            const Text(
               '↓',
               style: TextStyle(
                 color: Color.fromARGB(255, 0, 0, 0),
@@ -185,7 +177,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   MaterialPageRoute(builder: (context) => HobbyPage()),
                 );
               },
-              child: Text('Hobby  Collection'),
+              child: Text('My Hobby  Collection'),
               style: ElevatedButton.styleFrom(
                   backgroundColor: Color.fromARGB(255, 0, 0, 0)),
             ),
