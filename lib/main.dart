@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:renkon_works/hobby_page.dart';
+import 'package:renkon_works/next_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -54,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             SizedBox(
-              height: 80,
+              height: 30,
             ),
             const Text(
               '~ My profile ~',
@@ -72,7 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             SizedBox(
-              height: 30,
+              height: 40,
             ),
             const Text(
               'Name',
@@ -96,6 +98,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
               ),
+            ),
+            SizedBox(
+              height: 15,
             ),
             const Text(
               'Specialty',
@@ -121,6 +126,28 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             const Text(
+              '↓',
+              style: TextStyle(
+                color: Color.fromARGB(255, 0, 0, 0),
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => NextPage()),
+                );
+              },
+              child: Text('My Designpage'),
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Color.fromARGB(255, 0, 0, 0)),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            const Text(
               'Hobby',
               style: TextStyle(
                 color: Color.fromARGB(255, 72, 238, 50),
@@ -142,6 +169,25 @@ class _MyHomePageState extends State<MyHomePage> {
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
               ),
+            ),
+            const Text(
+              '↓',
+              style: TextStyle(
+                color: Color.fromARGB(255, 0, 0, 0),
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HobbyPage()),
+                );
+              },
+              child: Text('Hobby  Collection'),
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Color.fromARGB(255, 0, 0, 0)),
             ),
           ],
         ),
