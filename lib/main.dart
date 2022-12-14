@@ -66,12 +66,12 @@ class _MyHomePageState extends State<MyHomePage> {
               'Name : Wada Yamato',
               style: TextStyle(
                 color: Color.fromARGB(255, 0, 0, 0),
-                fontSize: 30,
+                fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
             ),
             SizedBox(
-              height: 40,
+              height: 60,
             ),
             const Text(
               'Profile',
@@ -96,16 +96,19 @@ class _MyHomePageState extends State<MyHomePage> {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            ElevatedButton(
+            OutlinedButton(
+              child: const Text('My Hobby  Collection'),
+              style: OutlinedButton.styleFrom(
+                primary: Colors.black,
+                shape: const StadiumBorder(),
+                side: const BorderSide(color: Color.fromARGB(255, 72, 238, 50)),
+              ),
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => ProfilePage()),
                 );
               },
-              child: Text('My Profile Page'),
-              style: ElevatedButton.styleFrom(
-                  backgroundColor: Color.fromARGB(255, 0, 0, 0)),
             ),
             SizedBox(
               height: 15,
@@ -133,16 +136,19 @@ class _MyHomePageState extends State<MyHomePage> {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            ElevatedButton(
+            OutlinedButton(
+              child: const Text('My Hobby  Collection'),
+              style: OutlinedButton.styleFrom(
+                primary: Colors.black,
+                shape: const StadiumBorder(),
+                side: const BorderSide(color: Color.fromARGB(255, 72, 238, 50)),
+              ),
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => NextPage()),
                 );
               },
-              child: Text('My Designpage'),
-              style: ElevatedButton.styleFrom(
-                  backgroundColor: Color.fromARGB(255, 0, 0, 0)),
             ),
             SizedBox(
               height: 15,
@@ -170,16 +176,19 @@ class _MyHomePageState extends State<MyHomePage> {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            ElevatedButton(
+            OutlinedButton(
+              child: const Text('My Hobby  Collection'),
+              style: OutlinedButton.styleFrom(
+                primary: Colors.black,
+                shape: const StadiumBorder(),
+                side: const BorderSide(color: Color.fromARGB(255, 72, 238, 50)),
+              ),
               onPressed: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => HobbyPage()),
                 );
               },
-              child: Text('My Hobby  Collection'),
-              style: ElevatedButton.styleFrom(
-                  backgroundColor: Color.fromARGB(255, 0, 0, 0)),
             ),
           ],
         ),

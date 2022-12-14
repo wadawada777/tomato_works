@@ -9,11 +9,11 @@ class NextPage extends StatelessWidget {
   Widget build(BuildContext context) {
     var scaffold = Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 0, 0, 0),
+        backgroundColor: Color.fromARGB(255, 72, 238, 50),
         title: const Icon(Icons.sports_soccer),
       ),
       body: Center(
-        child: Text(""),
+        child: Text("画像差し込み"),
       ),
     );
     return scaffold;
