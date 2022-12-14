@@ -42,17 +42,22 @@ class _MyHomePageState extends State<MyHomePage> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Container(
-              width: 350,
-              height: 200,
+              width: 250,
+              height: 150,
               decoration: const BoxDecoration(
-                  shape: BoxShape.circle,
-                  image: DecorationImage(
-                    fit: BoxFit.fill,
-                    image: AssetImage(''),
-                  )),
+                shape: BoxShape.circle,
+                image: DecorationImage(
+                  alignment: Alignment.topCenter,
+                  fit: BoxFit.cover,
+                  image: AssetImage('images/IMG_3424.JPG'),
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 80,
             ),
             const Text(
-              'My profile',
+              '~ My profile ~',
               style: TextStyle(
                 color: Color.fromARGB(255, 0, 0, 0),
                 fontSize: 45,
@@ -65,6 +70,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ],
               ),
+            ),
+            SizedBox(
+              height: 30,
             ),
             const Text(
               'Name',
