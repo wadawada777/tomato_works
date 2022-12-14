@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:renkon_works/hobby_page.dart';
 import 'package:renkon_works/next_page.dart';
 import 'package:renkon_works/profile_page.dart';
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        textTheme: GoogleFonts.robotoTextTheme(),
         primarySwatch: Colors.blue,
       ),
       home: const MyHomePage(title: 'Flutter Demo  '),
@@ -36,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 72, 238, 50),
+        backgroundColor: Color.fromARGB(255, 19, 164, 0),
         title: const Icon(Icons.sports_soccer),
       ),
       body: Center(
@@ -76,16 +78,9 @@ class _MyHomePageState extends State<MyHomePage> {
             const Text(
               'Profile',
               style: TextStyle(
-                color: Color.fromARGB(255, 72, 238, 50),
+                color: Color.fromARGB(255, 0, 0, 0),
                 fontSize: 45,
                 fontWeight: FontWeight.bold,
-                shadows: [
-                  Shadow(
-                    color: Color.fromARGB(255, 127, 124, 124),
-                    offset: Offset(5.0, 5.0),
-                    blurRadius: 4.0,
-                  ),
-                ],
               ),
             ),
             const Text(
@@ -99,9 +94,9 @@ class _MyHomePageState extends State<MyHomePage> {
             OutlinedButton(
               child: const Text('My Hobby  Collection'),
               style: OutlinedButton.styleFrom(
-                primary: Colors.black,
+                foregroundColor: Colors.black,
                 shape: const StadiumBorder(),
-                side: const BorderSide(color: Color.fromARGB(255, 72, 238, 50)),
+                side: const BorderSide(color: Color.fromARGB(255, 19, 164, 0)),
               ),
               onPressed: () {
                 Navigator.push(
@@ -116,16 +111,9 @@ class _MyHomePageState extends State<MyHomePage> {
             const Text(
               'Specialty',
               style: TextStyle(
-                color: Color.fromARGB(255, 72, 238, 50),
+                color: Color.fromARGB(255, 0, 0, 0),
                 fontSize: 45,
                 fontWeight: FontWeight.bold,
-                shadows: [
-                  Shadow(
-                    color: Color.fromARGB(255, 127, 124, 124),
-                    offset: Offset(5.0, 5.0),
-                    blurRadius: 4.0,
-                  ),
-                ],
               ),
             ),
             const Text(
@@ -139,9 +127,9 @@ class _MyHomePageState extends State<MyHomePage> {
             OutlinedButton(
               child: const Text('My Hobby  Collection'),
               style: OutlinedButton.styleFrom(
-                primary: Colors.black,
+                foregroundColor: Colors.black,
                 shape: const StadiumBorder(),
-                side: const BorderSide(color: Color.fromARGB(255, 72, 238, 50)),
+                side: const BorderSide(color: Color.fromARGB(255, 19, 164, 0)),
               ),
               onPressed: () {
                 Navigator.push(
@@ -156,16 +144,9 @@ class _MyHomePageState extends State<MyHomePage> {
             const Text(
               'Hobby',
               style: TextStyle(
-                color: Color.fromARGB(255, 72, 238, 50),
+                color: Color.fromARGB(255, 0, 0, 0),
                 fontSize: 45,
                 fontWeight: FontWeight.bold,
-                shadows: [
-                  Shadow(
-                    color: Color.fromARGB(255, 127, 124, 124),
-                    offset: Offset(5.0, 5.0),
-                    blurRadius: 4.0,
-                  ),
-                ],
               ),
             ),
             const Text(
@@ -177,11 +158,11 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             OutlinedButton(
-              child: const Text('My Hobby  Collection'),
+              child: const Text('My Hobby page'),
               style: OutlinedButton.styleFrom(
-                primary: Colors.black,
+                foregroundColor: Colors.black,
                 shape: const StadiumBorder(),
-                side: const BorderSide(color: Color.fromARGB(255, 72, 238, 50)),
+                side: const BorderSide(color: Color.fromARGB(255, 19, 164, 0)),
               ),
               onPressed: () {
                 Navigator.push(
