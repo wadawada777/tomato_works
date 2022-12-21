@@ -83,16 +83,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const Text(
-              '↓',
-              style: TextStyle(
-                color: Color.fromARGB(255, 0, 0, 0),
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-              ),
+            SizedBox(
+              height: 20,
             ),
             OutlinedButton(
-              child: const Text('My Hobby  Collection'),
+              child: const Text('My Page'),
               style: OutlinedButton.styleFrom(
                 foregroundColor: Colors.black,
                 shape: const StadiumBorder(),
@@ -116,16 +111,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const Text(
-              '↓',
-              style: TextStyle(
-                color: Color.fromARGB(255, 0, 0, 0),
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-              ),
+            SizedBox(
+              height: 20,
             ),
             OutlinedButton(
-              child: const Text('My Hobby  Collection'),
+              child: const Text('Web Site'),
               style: OutlinedButton.styleFrom(
                 foregroundColor: Colors.black,
                 shape: const StadiumBorder(),
@@ -149,13 +139,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const Text(
-              '↓',
-              style: TextStyle(
-                color: Color.fromARGB(255, 0, 0, 0),
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-              ),
+            SizedBox(
+              height: 20,
             ),
             OutlinedButton(
               child: const Text('My Hobby page'),
