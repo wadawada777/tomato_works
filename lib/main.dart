@@ -38,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 19, 164, 0),
+        backgroundColor: Color.fromARGB(255, 160, 230, 181),
         title: const Icon(Icons.sports_soccer),
       ),
       body: Stack(
@@ -100,7 +100,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     foregroundColor: Colors.black,
                     shape: const StadiumBorder(),
                     side: const BorderSide(
-                        color: Color.fromARGB(255, 19, 164, 0)),
+                        color: Color.fromARGB(255, 160, 230, 181)),
                   ),
                   onPressed: () {
                     Navigator.push(
@@ -129,7 +129,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     foregroundColor: Colors.black,
                     shape: const StadiumBorder(),
                     side: const BorderSide(
-                        color: Color.fromARGB(255, 19, 164, 0)),
+                        color: Color.fromARGB(255, 160, 230, 181)),
                   ),
                   onPressed: () {
                     Navigator.push(
@@ -158,7 +158,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     foregroundColor: Colors.black,
                     shape: const StadiumBorder(),
                     side: const BorderSide(
-                        color: Color.fromARGB(255, 19, 164, 0)),
+                        color: Color.fromARGB(255, 160, 230, 181)),
                   ),
                   onPressed: () {
                     Navigator.push(
