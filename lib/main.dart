@@ -95,7 +95,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   height: 20,
                 ),
                 OutlinedButton(
-                  child: const Text('My Page'),
+                  child: const Text('tap👆'),
                   style: OutlinedButton.styleFrom(
                     foregroundColor: Colors.black,
                     shape: const StadiumBorder(),
@@ -124,7 +124,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   height: 20,
                 ),
                 OutlinedButton(
-                  child: const Text('Web Site'),
+                  child: const Text('tap👆'),
                   style: OutlinedButton.styleFrom(
                     foregroundColor: Colors.black,
                     shape: const StadiumBorder(),
@@ -153,7 +153,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   height: 20,
                 ),
                 OutlinedButton(
-                  child: const Text('My Hobby page'),
+                  child: const Text('tap👆'),
                   style: OutlinedButton.styleFrom(
                     foregroundColor: Colors.black,
                     shape: const StadiumBorder(),
