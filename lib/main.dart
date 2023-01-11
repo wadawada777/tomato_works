@@ -73,6 +73,17 @@ class _MyHomePageState extends State<MyHomePage> {
                   height: 20,
                 ),
                 const Text(
+                  'Design  Portfolio',
+                  style: TextStyle(
+                    color: Color.fromARGB(255, 0, 0, 0),
+                    fontSize: 40,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(
+                  height: 15,
+                ),
+                const Text(
                   'Name : Wada Yamato',
                   style: TextStyle(
                     color: Color.fromARGB(255, 0, 0, 0),
